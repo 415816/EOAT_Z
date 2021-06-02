@@ -113,3 +113,16 @@ i{
     color: #ffffff !important;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
+
+pre{
+    font-family: Lucida Console;
+    background-color: #fff;
+    height: 300px;
+    width: 820px;
+    overflow: scroll;
+    margin: 0;
+}
+.appendix{
+    margin: 0;
+    width: 820px;
+}
