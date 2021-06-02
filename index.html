@@ -8,7 +8,30 @@
 </head>
 <body>
     <div class="quests">
-        <button class="start">Работает?</button>
+    
+        <div class="container">
+            <div class="startMessage">
+                <p>При сдаче дифференцированного зачета допускается использование листа и ручки, на испытание дается 20
+                    минут, таймер запустится после нажания кнопки "Приступить".<br>
+                    Введите в поле ниже свои ФИО</p>
+                <input placeholder="Фамилия Имя Отчество" id="FIO" type="text">
+                <button class="closeStartMessage">Приступить</button>
+            </div>
+        </div>
+    
+        <div class="endContainer">
+            <div class="endMessage">
+                <p><span id="toFio"></span>, Вы набрали <span id="scor"></span> балл(ов), Ваша оценка - <span
+                        id="appraisal"></span> </p>
+                <button class="closeEndMessage">Я все понял!
+                    <input type="password" id="passCloseMessage">
+                </button>
+            </div>
+        </div>
+    
+        <div id="r"></div>
+
+    
         <div class="que1 back">
             <h3>Вопрос 1</h3>
             <p><b>Зона дополнительного шунтирования</b></p>
@@ -35,7 +58,7 @@
         </div>
         <div class="que3 back">
             <h3>Вопрос 3</h3>
-            <p><b>Максимальная длина блок-участка</b></p>
+            <p><b>Максимальная длина блок-участка при АБТЦ</b></p>
             <label><input type="checkbox" class="que3Answ"> А) Равна 1000 м</label> <br>
             <label><input type="checkbox" class="que3Answ"> Б) Равна 2200 м</label> <br>
             <label><input type="checkbox" class="que3Answ"> В) Равна 2600 м</label> <br>
@@ -85,16 +108,16 @@
         <div class="que7 back">
             <h3>Вопрос 7</h3>
             <p><b>Определите ординату светофора той же серии, что и у светофора 2,</b> если </p>
-            <p><i>I</i><sub>з</sub> = </p><span class="izInp"></span>
-            <p><i>l</i><sub>зу</sub> = </p><span class="izuInp"></span>
+            <p><i>I</i><sub>з</sub> = <span class="izInp"></span> м</p>
+            <p><i>l</i><sub>зу</sub> = <span class="izuInp"></span> м</p>
             <img src="./img/series1.gif" alt=""><br>
             <p>Ответ: <label><input type="text" class="que7Answ" placeholder="Результат запишите в виде: 110+17 или 11017"></label></p>
         </div>
         <div class="que8 back">
             <h3>Вопрос 8</h3>
             <p><b>Определите ординаты сигнальных точек между светофорами 2 и 5,</b> если </p>
-            <p><i>S</i><sub>2</sub> = </p><span class="s2Inp"></span>
-            <p><i>S</i><sub>5</sub> = </p><span class="s5Inp"></span>
+            <p><i>S</i><sub>2</sub> = 80+00<span class="s2Inp"></span></p>
+            <p><i>S</i><sub>5</sub> = <span class="s5Inp"></span></p>
             <img src="./img/series2.gif" alt=""><br>
             <p><i>S</i><sub>3</sub> =
                 <label><input type="text" class="que8Answ" placeholder="Результат запишите в виде: 110+17 или 11017"></label>
@@ -102,6 +125,13 @@
             <p><i>S</i><sub>4</sub> =
                 <label><input type="text" class="que8Answ" placeholder="Результат запишите в виде: 110+17 или 11017"></label>
             </p>
+        </div>
+        <div class="footer">
+            <button class="result">Проверить результаты
+            </button>
+            <button class="badAnsw">Указать на неверные ответы
+                <input class="badAnswPass" type="password">
+            </button>
         </div>
     </div>
 
