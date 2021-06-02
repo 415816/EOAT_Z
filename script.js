@@ -653,6 +653,14 @@ closeEndMessage.onclick = () => {
   }
 }
 
+badAnsw.onclick = () => {
+  if(badAnswPass.value == 12)
+  {
+    badAnswPass.value = '';
+    falsAnsw();
+  }
+}
+
 
 function ColumnToRow(arr, colu) {
   let newArr = '';
@@ -731,11 +739,11 @@ closeStartMessage.onclick = () => {
   lzu = parseFloat(izuInp.innerHTML);
   
   answer7 = parseInt(identicalSeries(8000, Iz)[3].toFixed(0));
-  console.log(answer7);
+  console.log('S5 = ' + answer7);
   s5 = parseInt(s5Inp.innerHTML.replace('+', ''));
   if (s5 - 8000 < 3000) {
-    answer81 = parseInt(parseFloat(defferentSeries3(8000, s5)[4]).toFixed(0));
-    answer82 = parseInt(parseFloat(defferentSeries3(8000, s5)[5]).toFixed(0));
+    answer81 = parseInt(parseFloat(defferentSeries2(8000, s5)[3]).toFixed(0));
+    answer82 = s5;
     console.log('S3 = ' + answer81 + ', S4 = ' + answer82);
   }
   else { console.log(defferentSeries3(8000, s5)); 
