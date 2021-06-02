@@ -638,7 +638,8 @@ let toFio = document.querySelector('#toFio');
 let scor = document.querySelector('#scor');
 let appraisal = document.querySelector('#appraisal');
 let itog = '';
-
+const showAppend = document.querySelector('.showAppend');
+const appendix = document.querySelector('.appendix');
 
 
 
@@ -661,6 +662,11 @@ badAnsw.onclick = () => {
   }
 }
 
+showAppend.onclick = () => {
+  appendix.classList.toggle('sho');
+  /* if(appendix.style.display == "block") {appendix.style.display = "none";} else if(appendix.style.display == "none") {appendix.style.display = "block";} */
+  console.log(111);
+}
 
 function ColumnToRow(arr, colu) {
   let newArr = '';

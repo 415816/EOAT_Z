@@ -95,7 +95,7 @@ i{
     font-size: 30px;
 }
 
-.result, .badAnsw, .closeStartMessage, .closeEndMessage{
+.result, .badAnsw, .closeStartMessage, .closeEndMessage, .showAppend{
     border-radius: 5px;
     min-height: 25px;
     min-width: 170px;
@@ -108,7 +108,7 @@ i{
     font-weight: bold;
 }
 
-.result:hover, .badAnsw:hover, .closeStartMessage:hover, .closeEndMessage:hover{cursor: pointer;
+.result:hover, .badAnsw:hover, .closeStartMessage:hover, .closeEndMessage:hover, .showAppend:hover{cursor: pointer;
     background-color: #1f318e !important;
     color: #ffffff !important;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
@@ -125,4 +125,9 @@ pre{
 .appendix{
     margin: 0;
     width: 820px;
+    display: none;
+}
+
+.sho{
+    display: block;
 }
