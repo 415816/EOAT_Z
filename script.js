@@ -640,7 +640,15 @@ let appraisal = document.querySelector('#appraisal');
 let itog = '';
 const showAppend = document.querySelector('.showAppend');
 const appendix = document.querySelector('.appendix');
-
+const calcBtn = document.querySelector('.calcBtn');
+let add = document.querySelectorAll('.calcADD');
+let sub = document.querySelectorAll('.calcSUB');
+let mul = document.querySelectorAll('.calcMUL');
+let div = document.querySelectorAll('.calcDIV');
+let resAdd = document.querySelector('.resADD');
+let resSub = document.querySelector('.resSUB');
+let resMul = document.querySelector('.resMUL');
+let resDiv = document.querySelector('.resDIV');
 
 
 result.onclick = () => {
@@ -664,8 +672,13 @@ badAnsw.onclick = () => {
 
 showAppend.onclick = () => {
   appendix.classList.toggle('sho');
-  /* if(appendix.style.display == "block") {appendix.style.display = "none";} else if(appendix.style.display == "none") {appendix.style.display = "block";} */
-  console.log(111);
+}
+
+calcBtn.onclick = () => {
+  resAdd.innerHTML = (parseFloat(add[0].value.replace(',', '.')) + parseFloat(add[1].value.replace(',', '.'))).toFixed(2);
+  resSub.innerHTML = (parseFloat(sub[0].value.replace(',', '.')) - parseFloat(sub[1].value.replace(',', '.'))).toFixed(2);
+  resMul.innerHTML = (parseFloat(mul[0].value.replace(',', '.')) * parseFloat(mul[1].value.replace(',', '.'))).toFixed(2);
+  resDiv.innerHTML = (parseFloat(div[0].value.replace(',', '.')) / parseFloat(div[1].value.replace(',', '.'))).toFixed(2);
 }
 
 function ColumnToRow(arr, colu) {
@@ -676,14 +689,12 @@ function ColumnToRow(arr, colu) {
   return newArr.split(',');
 }
     
-  /* формирование одномерных массивов отражающих столбцы (ордината головы поезда, ордината центра поезда, ордината хвоста поезда, скорость, время, номер шага) таблицы приложения 1 методических указаний */
   Sg = ColumnToRow(mass, 0);
   Sc = ColumnToRow(mass, 1);
   Sh = ColumnToRow(mass, 2);
   V = ColumnToRow(mass, 3);
   t = ColumnToRow(mass, 4);
     
-  /* функция поиска элемента в массиве: в функцию передается массив и число которое требуется найти либо ближайшее округляя в большую сторону */
 const srchInArr = function searchInArray(array, n) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] >= n) {
@@ -692,7 +703,6 @@ const srchInArr = function searchInArray(array, n) {
   }
 }
 
-// функция определения ординаты светофоров одинаковой серии
 function identicalSeries(Sg1, Iz){
   let Tg1, Thzu4, Szu4, S4;
   Tg1 = t[srchInArr(Sg, Sg1)[0]];
@@ -703,7 +713,6 @@ function identicalSeries(Sg1, Iz){
   return [Tg1, Thzu4, Szu4, S4];
 }
 
-// функция определения ординат светофоров разных серий (для 3х блок-участков)
 function defferentSeries3(Sc1, Sc4){
   let Tc1, Tc2, Tc3, Tc4, S2, S3; 
   Tc1 = t[srchInArr(Sc, Sc1)[0]];
@@ -715,7 +724,6 @@ function defferentSeries3(Sc1, Sc4){
   return [Tc1, Tc2, Tc3, Tc4, S2, S3];
 }
 
-// функция определения ординат светофоров разных серий (для 2х блок-участков)
 function defferentSeries2(Sc1, Sc3){
   let Tc1, Tc2, Tc3, S2; 
   Tc1 = t[srchInArr(Sc, Sc1)[0]];
@@ -752,7 +760,7 @@ closeStartMessage.onclick = () => {
     answer82 = s5;
     console.log('S3 = ' + answer81 + ', S4 = ' + answer82);
   }
-  else { console.log(defferentSeries3(8000, s5)); 
+  else { 
     answer81 = parseInt(parseFloat(defferentSeries3(8000, s5)[4]).toFixed(0));
     answer82 = parseInt(parseFloat(defferentSeries3(8000, s5)[5]).toFixed(0));
     console.log('S3 = ' + answer81 + ', S4 = ' + answer82);

@@ -29,7 +29,7 @@ div {
     flex-wrap: wrap;
 }
 
-input[type="text"]{
+#FIO, .que7Answ, .que8Answ{
     min-width: 450px;
     border-radius: 5px;
 }
@@ -130,4 +130,12 @@ pre{
 
 .sho{
     display: block;
+}
+
+.calculator{
+    float: right;
+}
+
+.calc{
+    width: 100px;
 }
