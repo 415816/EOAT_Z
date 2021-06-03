@@ -22,7 +22,7 @@ const s2Inp = document.querySelector('.s2Inp');
 const s5Inp = document.querySelector('.s5Inp');
 const closeStartMessage = document.querySelector('.closeStartMessage');
 const container = document.querySelector('.container');
-const time = 15 * 60;
+const time = 30 * 60;
 const r = document.getElementById('r');
 let tmp = time;
 let answer7;
