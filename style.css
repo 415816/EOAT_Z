@@ -126,10 +126,12 @@ pre{
     margin: 0;
     width: 820px;
     display: none;
+    animation-duration: 2s, 10s;
 }
 
 .sho{
     display: block;
+    animation-duration: 2s, 10s;
 }
 
 .calculator{
