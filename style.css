@@ -136,8 +136,38 @@ pre{
 
 .calculator{
     float: right;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .calc{
     width: 100px;
+}
+
+.calculator div{
+    display:inline-flex;
+    width: 20px;
+    text-align: center;
+    margin: 0 0 0 13px;
+    padding: 0;
+    min-height: 35px;
+}
+
+#notes{
+    float: right;
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 170px;
+    z-index: 55;
+}
+.notesIn{
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+
 }

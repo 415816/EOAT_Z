@@ -23,13 +23,14 @@
             <div class="endMessage">
                 <p><span id="toFio"></span>, Вы набрали <span id="scor"></span> балл(ов), Ваша оценка - <span
                         id="appraisal"></span> </p>
-                <button class="closeEndMessage">Я все понял!
-                    <input type="password" id="passCloseMessage">
-                </button>
+                <button class="closeEndMessage">Я все понял!</button><input type="password" id="passCloseMessage">
             </div>
         </div>
     
         <div id="r"></div>
+        <div id="notes">
+            <textarea placeholder="Для заметок" class="notesIn" cols="30" rows="10"></textarea>
+        </div>
 
     
         <div class="que1 back">
@@ -129,10 +130,8 @@
         <div class="footer">
             <button class="showAppend">Приложение</button>
             <button class="result">Проверить результаты</button>
-            <button class="badAnsw">Указать на неверные ответы
-                <input class="badAnswPass" type="password">
-            </button>
-        
+            <button class="badAnsw">Указать на неверные ответы</button>
+            <input class="badAnswPass" type="password">
         </div>
 
     <div class="appendix">
@@ -743,10 +742,10 @@
     
     </div>
     <div class="calculator">
-        <input class="calcADD" type="text"><span>&nbsp;+&nbsp;</span> <input class="calcADD" type="text"> = <span class="resADD"></span><br>
-        <input class="calcSUB" type="text"><span> &nbsp;-&nbsp; </span> <input class="calcSUB" type="text"> = <span class="resSUB"></span><br>
-        <input class="calcMUL" type="text"><span> &nbsp;*&nbsp;</span> <input class="calcMUL" type="text"> = <span class="resMUL"></span><br>
-        <input class="calcDIV" type="text"><span> &nbsp;/&nbsp;</span> <input class="calcDIV" type="text"> = <span class="resDIV"></span><br>
+        <input class="calcADD" type="text"><div>+</div><input class="calcADD" type="text"> = <span class="resADD"></span><br>
+        <input class="calcSUB" type="text"><div>-</div><input class="calcSUB" type="text"> = <span class="resSUB"></span><br>
+        <input class="calcMUL" type="text"><div>*</div><input class="calcMUL" type="text"> = <span class="resMUL"></span><br>
+        <input class="calcDIV" type="text"><div>/</div><input class="calcDIV" type="text"> = <span class="resDIV"></span><br>
         <button class="calcBtn">Вычислить</button>
         
     </div>
