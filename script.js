@@ -22,7 +22,7 @@ const s2Inp = document.querySelector('.s2Inp');
 const s5Inp = document.querySelector('.s5Inp');
 const closeStartMessage = document.querySelector('.closeStartMessage');
 const container = document.querySelector('.container');
-const time = 30 * 60;
+const time = 25 * 60;
 const r = document.getElementById('r');
 let tmp = time;
 let answer7;
@@ -820,7 +820,7 @@ function checkAnsw() {
   }
   
 
-  if(score > 14) {itog = '"отлично". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else if(score > 12) {itog = '"хорошо". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else if(score > 8) {itog = '"удовлетворительно". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else {itog = '"неудовлетворительно". Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat';} 
+  if(score > 16) {itog = '"отлично". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else if(score > 13) {itog = '"хорошо". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else if(score > 9) {itog = '"удовлетворительно". Оценка может быть выставлена только при наличии письма с фразой "к защите"';} else {itog = '"неудовлетворительно". Пересдача по вторникам, время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat';} 
   toFio.innerHTML = FIO.value;
   scor.innerHTML = score;
   appraisal.innerHTML = itog;
