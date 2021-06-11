@@ -778,32 +778,32 @@ function checkAnsw() {
   qu6.style.boxShadow = "none";
   qu7.style.boxShadow = "none";
   qu8.style.boxShadow = "none";
-  if (qw1Inp[5].checked) {
+  if ((qw1Inp[5].checked == true) && (qw1Inp[0].checked == false) && (qw1Inp[1].checked == false) && (qw1Inp[2].checked == false) && (qw1Inp[3].checked == false) && (qw1Inp[4].checked == false) && (qw1Inp[6].checked == false) && (qw1Inp[7].checked == false) && (qw1Inp[8].checked == false)) {
     score += 1;
   } else {
     qu1.setAttribute("value", "false");
   }
-  if (qw2Inp[3].checked) {
+  if ((qw2Inp[3].checked == true) && (qw2Inp[0].checked == false) && (qw2Inp[1].checked == false) && (qw2Inp[2].checked == false) && (qw2Inp[4].checked == false) && (qw2Inp[5].checked == false) && (qw2Inp[6].checked == false)) {
     score += 1;
   } else {
     qu2.setAttribute("value", "false");
   }
-  if (qw3Inp[1].checked) {
+  if ((qw3Inp[1].checked == true) && (qw3Inp[0].checked == false) && (qw3Inp[2].checked == false) && (qw3Inp[3].checked == false) && (qw3Inp[4].checked == false) && (qw3Inp[5].checked == false) && (qw3Inp[6].checked == false) && (qw3Inp[7].checked == false) && (qw3Inp[8].checked == false)) {
     score += 1;
   } else {
     qu3.setAttribute("value", "false");
   }
-  if (qw4Inp[3].checked) {
+  if ((qw4Inp[3].checked == true) && (qw4Inp[0].checked == false) && (qw4Inp[1].checked == false) && (qw4Inp[2].checked == false) && (qw4Inp[4].checked == false) && (qw4Inp[5].checked == false) && (qw4Inp[6].checked == false)) {
     score += 1;
   } else {
     qu4.setAttribute("value", "false");
   }
-  if (qw5Inp[4].checked) {
+  if ((qw5Inp[4].checked == true) && (qw5Inp[0].checked == false) && (qw5Inp[1].checked == false) && (qw5Inp[2].checked == false) && (qw5Inp[3].checked == false) && (qw5Inp[5].checked == false) && (qw5Inp[6].checked == false)) {
     score += 1;
   } else {
     qu5.setAttribute("value", "false");
   }
-  if (qw6Inp[2].checked && qw6Inp[4].checked && qw6Inp[7].checked) {
+  if ((qw6Inp[2].checked == true) && (qw6Inp[4].checked == true) && (qw6Inp[7].checked == true) && (qw6Inp[0].checked == false) && (qw6Inp[1].checked == false) && (qw6Inp[3].checked == false) && (qw6Inp[5].checked == false) && (qw6Inp[6].checked == false) && (qw6Inp[8].checked == false) && (qw6Inp[9].checked == false)) {
     score += 1;
   } else {
     qu6.setAttribute("value", "false");
