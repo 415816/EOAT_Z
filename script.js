@@ -742,7 +742,10 @@ closeStartMessage.onclick = () => {
       let m = (c / 60) >> 0
       let s = (c - m * 60) + '';
       r.textContent = 'Осталось ' + m + ':' + (s.length > 1 ? '' : '0') + s;
-      if (m == 0 && s == 1) checkAnsw();
+      if ((m == 0) && (s == 01)) {
+        endContainer.style.display = "block";
+        checkAnsw();
+      }
       tmp != 0 || (tmp = time);
     }, 1000);
   }
